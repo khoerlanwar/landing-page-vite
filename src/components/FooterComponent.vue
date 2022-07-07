@@ -1,12 +1,9 @@
 <template>
   <footer class="py-11 w-full bg-[#4D4D4D] text-white">
-    <div class="container w-full mx-auto p-5">
+    <div class="lg:container w-full mx-auto p-5">
       <div class="grid gap-8 sm:grid-cols-3 lg:grid-cols-12 md:grid-cols-8">
         <div class="col-span-3">
-          <img
-            src="https://dummyimage.com/286x100/ffffff/34385e.png&text=Logo+286x100"
-            alt=""
-          />
+          <img src="https://dummyimage.com/286x100/ffffff/34385e.png&text=Logo+286x100" alt="" />
           <div class="text-lg my-4">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
           </div>

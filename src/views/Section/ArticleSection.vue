@@ -6,13 +6,9 @@
         <div class="lg:col-span-9 mobile:col-span-12">
           <div class="flex flex-col">
             <div class="flex items-center">
-              <div
-                class="rounded-full bg-slate-100 flex flex-col py-2 px-6 mr-4"
-              >
+              <div class="rounded-full bg-slate-100 flex flex-col py-2 px-6 mr-4">
                 <span class="font-bold text-2xl">18</span>
-                <span class="text-center font-semibold text-orange-400"
-                  >Jan</span
-                >
+                <span class="text-center font-semibold text-orange-400">Jan</span>
               </div>
               <div class="lg:text-2xl font-bold">
                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -20,18 +16,13 @@
                 <div class="text-sm">
                   by <i class="text-orange-400">admin</i>
                   <span
-                    class="text-xs lg:text-tiny bg-orange-400 text-white px-4 py-1 rounded font-semibold ml-2"
-                    >Kategori</span
-                  >
+                    class="text-xs lg:text-tiny bg-orange-400 text-white px-4 py-1 rounded font-semibold ml-2">Kategori</span>
                 </div>
               </div>
             </div>
             <div class="py-4">
-              <img
-                src="https://dummyimage.com/1280x600/b8b8b8/34385e.png&text=Article+1280x600"
-                alt=""
-                class="rounded"
-              />
+              <img src="https://dummyimage.com/1280x600/b8b8b8/34385e.png&text=Article+1280x600" alt=""
+                class="rounded" />
             </div>
             <div class="pt-2">
               Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
@@ -69,7 +60,7 @@
             </div>
             <div class="text-right pt-4">
               Share:
-              <a href="#" class="mx-1 text-blue-500">Instagram</a>
+              <a href="/article/1234" class="mx-1 text-blue-500">Instagram</a>
               <a href="#" class="mx-1 text-blue-500">Facebook</a>
               <a href="#" class="mx-1 text-blue-500">Twitter</a>
               <a href="#" class="mx-1 text-blue-500">Whatsapp</a>
@@ -81,26 +72,14 @@
           <div>
             <div class="text-xl font-bold">Promo Side</div>
             <div class="relative flex space-x-4 overflow-auto">
-              <img
-                src="https://dummyimage.com/300x300/b8b8b8/34385e.png&text=Promo+300x300"
-                alt=""
-                class="my-4 lg:min-w-[300px]"
-              />
-              <img
-                src="https://dummyimage.com/300x300/b8b8b8/34385e.png&text=Promo+300x300"
-                alt=""
-                class="my-4 lg:min-w-[300px]"
-              />
-              <img
-                src="https://dummyimage.com/300x300/b8b8b8/34385e.png&text=Promo+300x300"
-                alt=""
-                class="my-4 lg:min-w-[300px]"
-              />
-              <img
-                src="https://dummyimage.com/300x300/b8b8b8/34385e.png&text=Promo+300x300"
-                alt=""
-                class="my-4 lg:min-w-[300px]"
-              />
+              <img src="https://dummyimage.com/300x300/b8b8b8/34385e.png&text=Promo+300x300" alt=""
+                class="my-4 lg:min-w-[300px]" />
+              <img src="https://dummyimage.com/300x300/b8b8b8/34385e.png&text=Promo+300x300" alt=""
+                class="my-4 lg:min-w-[300px]" />
+              <img src="https://dummyimage.com/300x300/b8b8b8/34385e.png&text=Promo+300x300" alt=""
+                class="my-4 lg:min-w-[300px]" />
+              <img src="https://dummyimage.com/300x300/b8b8b8/34385e.png&text=Promo+300x300" alt=""
+                class="my-4 lg:min-w-[300px]" />
             </div>
           </div>
           <div>
@@ -113,14 +92,10 @@
                 <span class="bg-slate-200 px-4 py-1 rounded-md">Acne</span>
               </a>
               <a href="#" class="m-2">
-                <span class="bg-slate-200 px-4 py-1 rounded-md"
-                  >Hair Solution</span
-                >
+                <span class="bg-slate-200 px-4 py-1 rounded-md">Hair Solution</span>
               </a>
               <a href="#" class="m-2">
-                <span class="bg-slate-200 px-4 py-1 rounded-md"
-                  >NMW Clinic</span
-                >
+                <span class="bg-slate-200 px-4 py-1 rounded-md">NMW Clinic</span>
               </a>
             </div>
           </div>
@@ -128,16 +103,11 @@
             <div class="text-xl font-bold">Latest Article</div>
             <div class="flex flex-col">
               <div>
-                <img
-                  src="https://dummyimage.com/300x200/b8b8b8/34385e.png&text=Side+Article+300x200"
-                  alt=""
-                  class="rounded"
-                />
+                <img src="https://dummyimage.com/300x200/b8b8b8/34385e.png&text=Side+Article+300x200" alt=""
+                  class="rounded" />
                 <div class="text-md font-semibold py-4">
                   <div class="flex justify-between">
-                    <div
-                      class="bg-orange-400 px-4 py-1/2 rounded-md text-white"
-                    >
+                    <div class="bg-orange-400 px-4 py-1/2 rounded-md text-white">
                       Kategori
                     </div>
                     <div class="font-bold text-sm">21 Juni 2022</div>
@@ -148,16 +118,11 @@
                 </div>
               </div>
               <div>
-                <img
-                  src="https://dummyimage.com/300x200/b8b8b8/34385e.png&text=Side+Article+300x200"
-                  alt=""
-                  class="rounded"
-                />
+                <img src="https://dummyimage.com/300x200/b8b8b8/34385e.png&text=Side+Article+300x200" alt=""
+                  class="rounded" />
                 <div class="text-md font-semibold py-4">
                   <div class="flex justify-between">
-                    <div
-                      class="bg-orange-400 px-4 py-1/2 rounded-md text-white"
-                    >
+                    <div class="bg-orange-400 px-4 py-1/2 rounded-md text-white">
                       Kategori
                     </div>
                     <div class="font-bold text-sm">21 Juni 2022</div>
@@ -168,16 +133,11 @@
                 </div>
               </div>
               <div>
-                <img
-                  src="https://dummyimage.com/300x200/b8b8b8/34385e.png&text=Side+Article+300x200"
-                  alt=""
-                  class="rounded"
-                />
+                <img src="https://dummyimage.com/300x200/b8b8b8/34385e.png&text=Side+Article+300x200" alt=""
+                  class="rounded" />
                 <div class="text-md font-semibold py-4">
                   <div class="flex justify-between">
-                    <div
-                      class="bg-orange-400 px-4 py-1/2 rounded-md text-white"
-                    >
+                    <div class="bg-orange-400 px-4 py-1/2 rounded-md text-white">
                       Kategori
                     </div>
                     <div class="font-bold text-sm">21 Juni 2022</div>
@@ -199,14 +159,16 @@
 export default {
   name: "LandingArticleSection",
 
-  data() {
+  data()
+  {
     return {};
   },
 
-  mounted() {},
+  mounted() { },
 
   methods: {},
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>

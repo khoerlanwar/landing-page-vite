@@ -9,7 +9,7 @@
           Promo Section
         </div>
         <div class="text-right">
-          <a href="#" class="text-blue-600 text-xs lg:text-tiny">Lihat Semua</a>
+          <router-link to="/" class="text-blue-600 text-xs lg:text-tiny">Lihat Semua</router-link>
         </div>
       </section>
       <section id="treatment" class="py-4">
@@ -17,61 +17,21 @@
           <div class="text-lg lg:text-3xl font-bold">Treatment Section</div>
           <div class="text-xs sm:text-sm">lorem ipsum deskription</div>
           <div class="text-right">
-            <a href="/treatment" class="text-blue-600 text-xs lg:text-tiny">Lihat Semua</a>
+            <router-link to="/treatment" class="text-blue-600 text-xs lg:text-tiny">Lihat Semua</router-link>
           </div>
         </div>
         <div class="grid gap-3 lg:grid-cols-5 grid-cols-3 py-4">
           <div v-for="items in treatment" :key="items.id">
             <div class="flex justify-center">
-              <a :href="'/treatment?q=' + items.title">
+              <router-link :to="'/treatment?q=' + items.title">
                 <img :src="items.img" :alt="items.title"
                   class="rounded-md shadow-md hover:shadow-xl hover:-translate-y-1 transition case-out-in hover:scale-105 delay-100 duration-100" />
-              </a>
+              </router-link>
             </div>
           </div>
         </div>
       </section>
       <section id="product" class="py-4">
-        <!-- <div class="py-2 flex justify-between items-center">
-          <div>
-            <div class="text-lg lg:text-3xl font-bold">Product Section</div>
-            <div class="text-xs lg:text-sm">lorem ipsum description</div>
-          </div>
-          <a href="/treatment" class="text-blue-600 text-xs lg:text-tiny">Lihat Semua</a>
-        </div>
-        <div class="flex space-x-4 flex-nowrap overflow-auto py-4" id="category">
-          <div v-for="items in product" :key="items.id" id="product-card"
-            class="min-w-[160px] lg:min-w-[280px] my-2 hover:shadow-lg hover:rounded-lg transition duration-800 delay-400 animation ease-in-out p-2">
-            <div class="flex w-full">
-              <a href="product?q=">
-                <img :src="items.img" alt="" class="rounded-lg" />
-              </a>
-            </div>
-            <div class="flex flex-col py-4">
-              <a href="product?q=">
-                <div class="text-sm lg:text-lg font-bold hover:text-orange-500">
-                  {{ items.title }}
-                </div>
-              </a>
-              <div class="lg:text-xl font-bold text-red-500">
-                Rp {{ items.price_discount.toLocaleString("en-US") }}
-              </div>
-              <div class="flex items-center">
-                <div class="text-slate-500 mr-4 text-sm lg:text-lg">
-                  <s>Rp {{ items.price.toLocaleString("en-US") }}</s>
-                </div>
-                <div class="text-red-500 text-sm bg-red-200 px-2 rounded">
-                  <div class="text-xs lg:text-tiny">
-                    {{ items.discount }}% off
-                  </div>
-                </div>
-              </div>
-            </div>
-            <button @click="addCart(items.id)" class="flex w-3/4 items-center bg-orange-500 m-auto rounded py-1 mb-4">
-              <div class="m-auto text-white hover:opacity-75">+Keranjang</div>
-            </button>
-          </div>
-        </div> -->
         <div class="py-2 flex justify-between items-center">
           <div>
             <div class="text-lg lg:text-3xl font-bold">Product Section</div>
@@ -83,16 +43,16 @@
           <div v-for="items in product" :key="items.cart_id" id="product-card"
             class="min-w-[160px] lg:min-w-[280px] my-2 hover:shadow-lg hover:rounded-lg transition duration-800 delay-400 animation ease-in-out p-2">
             <div class="flex w-full">
-              <a href="product?q=">
+              <router-link :to="'product?q=&id=' + items.cart_id">
                 <img :src="items.cart_img" alt="" class="rounded-lg" />
-              </a>
+              </router-link>
             </div>
             <div class="flex flex-col py-4">
-              <a href="product?q=">
+              <router-link :to="'product?q=&id=' + items.cart_id">
                 <div class="text-sm lg:text-lg font-bold hover:text-orange-500">
                   {{ items.cart_title }}
                 </div>
-              </a>
+              </router-link>
               <div v-if="items.cart_price_discount" class="lg:text-xl font-bold text-red-500">
                 Rp {{ items.cart_price_discount.toLocaleString("en-US") }}
               </div>
@@ -183,11 +143,11 @@
       <section id="artikel" class="py-4">
         <div class="flex justify-between items-center">
           <div class="lg:text-3xl font-bold w-3/4">Artikel Section</div>
-          <a href="/article" class="text-xs lg:text-tiny text-blue-600">Lihat Semua</a>
+          <router-link to="/article" class="text-xs lg:text-tiny text-blue-600">Lihat Semua</router-link>
         </div>
         <div class="flex space-x-3 flex-nowrap overflow-auto py-6 px-3">
           <div v-for="items in article" :key="items.id" class="flex flex-col lg:w-1/3 min-w-[340px]">
-            <a :href="'/article?q=' + items.title"
+            <router-link :to="'/article?q=' + items.title"
               class="hover:scale-105 hover:shadow-md hover transition duration-800 delay-400 animation ease-in-out p-2">
               <div>
                 <img :src="items.img" alt="img-article" class="rounded" />
@@ -206,14 +166,10 @@
                   {{ items.description }}
                 </div>
               </div>
-            </a>
+            </router-link>
           </div>
         </div>
       </section>
-      <div>
-        <label>My Custom Input</label>
-        <input type="text" placeholder="Custom input!" @input="handleChange" />
-      </div>
     </div>
   </main>
 </template>

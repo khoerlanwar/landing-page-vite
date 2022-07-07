@@ -3,6 +3,7 @@ import HomeView from "../views/HomeView.vue";
 import TreatmentSection from "../views/Section/TreatmentSection.vue";
 import ArticleSection from "../views/Section/ArticleSection.vue";
 import BrochureSection from "../views/Section/BrochureSection.vue";
+import ProductSection from "../views/Section/ProductSection.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -27,6 +28,11 @@ const router = createRouter({
       path: "/brochure",
       name: "brochure",
       component: BrochureSection,
+    },
+    {
+      path: "/product",
+      name: "product",
+      component: ProductSection,
     },
     // {
     //   path: "/about",

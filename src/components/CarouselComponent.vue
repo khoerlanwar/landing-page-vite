@@ -3,9 +3,9 @@
     <!-- Images Carousel -->
     <div v-for="item in slides" :key="item.id">
       <div v-show="activeSlide === item.id" class="flex-shrink-0 cursor-pointer">
-        <a :href="item.link">
+        <router-link :to="item.link">
           <img :src="item.img" alt="" class="w-full shadow-md" />
-        </a>
+        </router-link>
       </div>
     </div>
     <!-- Button Next -->

@@ -1,10 +1,10 @@
 <template>
   <div class="fixed top-0 left-0 w-full h-[78px] z-10 bg-slate-50" :class="scrolled ? 'scroll' : ''">
     <div class="flex justify-between items-center p-4">
-      <a href="/">
+      <router-link to="/">
         <img src="https://dummyimage.com/120x48/ffffff/34385e.png&text=Logo+120x48" alt="Icon Logo"
           class="max-w-[120px]" />
-      </a>
+      </router-link>
       <div></div>
       <nav>
         <div class="flex space-x-2">

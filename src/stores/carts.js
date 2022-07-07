@@ -20,7 +20,7 @@ export const useCartStore = defineStore("carts", {
       var total = this.total ? this.total : 0;
       carts.forEach((data) =>
       {
-        total += data.cart_price * data.cart_quantity
+        total += data.cart_price_discount ? (data.cart_price_discount * data.cart_quantity) : (data.cart_price * data.cart_quantity)
       })
       return total
     }

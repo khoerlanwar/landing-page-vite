@@ -2,14 +2,14 @@
   <div id="app">
     <Header />
     <router-view class="lg:container m-auto" />
-    <!-- <Footer /> -->
+    <Footer />
   </div>
 </template>
 
 <script setup>
 import { RouterView } from "vue-router";
 import Header from "@/components/HeaderComponent.vue";
-// import Footer from "@/components/FooterComponent.vue";
+import Footer from "@/components/FooterComponent.vue";
 
 </script>
 

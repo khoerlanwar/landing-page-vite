@@ -1,9 +1,5 @@
 <template>
   <main>
-    <div class="flex flex-col justify-center pt-10 text-xl">
-      <div class="text-center">Testing Pinia</div>
-      <button type="button" @click="addCart(1)" class="bg-blue-500">abcd</button>
-    </div>
   </main>
 </template>
 

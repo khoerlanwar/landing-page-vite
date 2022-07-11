@@ -125,7 +125,8 @@ export default {
     };
   },
   mounted()
-  { },
+  {
+  },
   methods: {
     handleScroll()
     {
@@ -143,7 +144,7 @@ export default {
     {
       this.cartStore.removeCarts(params)
       document.getElementById(params).remove();
-    }
+    },
   },
   created()
   {

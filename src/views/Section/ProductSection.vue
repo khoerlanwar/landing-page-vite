@@ -1,7 +1,8 @@
 <template>
   <main>
-    <div class="p-4">
-      <BreadCrump class="mb-4" />
+    <BreadCrump class="p-4" :page="this.$route.name" :params="this.$route.query.q" />
+    <!-- Detail Product -->
+    <div v-if="this.$route.query.q" class="p-4">
       <div class="grid grid-cols-12">
         <div class="col-span-12 md:col-span-5">
           <img src="https://dummyimage.com/625x750/b8b8b8/34385e.png&text=Img+625x750" alt="" class="rounded-lg p-1">
@@ -114,6 +115,158 @@
           <img src="https://dummyimage.com/200x200/b8b8b8/34385e.png&text=Img+200x200" alt=""
             class="rounded-lg p-1 min-w-[200px]" />
         </router-link>
+      </div>
+    </div>
+    <!-- End Detail Product -->
+    <div v-else class="mb-10">
+      <div class="grid grid-cols-12 bg-gray-100 p-4 gap-4 rounded-md">
+        <div class="col-span-12 text-center my-4">
+          <div class="text-3xl font-bold">Semua Produk</div>
+          <input class="w-2/4 p-2 outline-orange-400 rounded-lg border" placeholder="Cari Produk...">
+        </div>
+        <div class="col-span-3 hover:scale-105 hover:shadow-md hover:p-3 rounded-lg">
+          <router-link :to="'/product?q=nama product string'">
+            <img src="https://dummyimage.com/300x300/b8b8b8/34385e.png&text=Img+300x300" alt=""
+              class="w-full rounded-lg">
+            <div class="py-2">
+              <div class="text-xl font-bold">Nama Product String</div>
+              <div class="flex w-full flex-wrap">
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Acne</div>
+                </div>
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Anti Aging</div>
+                </div>
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Jerawat</div>
+                </div>
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Kulit Berminyak</div>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </div>
+        <div class="col-span-3 hover:scale-105 hover:shadow-md hover:p-3 rounded-lg">
+          <router-link :to="'/product?q=nama product string'">
+            <img src="https://dummyimage.com/300x300/b8b8b8/34385e.png&text=Img+300x300" alt=""
+              class="w-full rounded-lg">
+            <div class="py-2">
+              <div class="text-xl font-bold">Nama Product String</div>
+              <div class="flex w-full flex-wrap">
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Acne</div>
+                </div>
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Anti Aging</div>
+                </div>
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Jerawat</div>
+                </div>
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Kulit Berminyak</div>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </div>
+        <div class="col-span-3 hover:scale-105 hover:shadow-md hover:p-3 rounded-lg">
+          <router-link :to="'/product?q=nama product string'">
+            <img src="https://dummyimage.com/300x300/b8b8b8/34385e.png&text=Img+300x300" alt=""
+              class="w-full rounded-lg">
+            <div class="py-2">
+              <div class="text-xl font-bold">Nama Product String</div>
+              <div class="flex w-full flex-wrap">
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Acne</div>
+                </div>
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Anti Aging</div>
+                </div>
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Jerawat</div>
+                </div>
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Kulit Berminyak</div>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </div>
+        <div class="col-span-3 hover:scale-105 hover:shadow-md hover:p-3 rounded-lg">
+          <router-link :to="'/product?q=nama product string'">
+            <img src="https://dummyimage.com/300x300/b8b8b8/34385e.png&text=Img+300x300" alt=""
+              class="w-full rounded-lg">
+            <div class="py-2">
+              <div class="text-xl font-bold">Nama Product String</div>
+              <div class="flex w-full flex-wrap">
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Acne</div>
+                </div>
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Anti Aging</div>
+                </div>
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Jerawat</div>
+                </div>
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Kulit Berminyak</div>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </div>
+        <div class="col-span-3 hover:scale-105 hover:shadow-md hover:p-3 rounded-lg">
+          <router-link :to="'/product?q=nama product string'">
+            <img src="https://dummyimage.com/300x300/b8b8b8/34385e.png&text=Img+300x300" alt=""
+              class="w-full rounded-lg">
+            <div class="py-2">
+              <div class="text-xl font-bold">Nama Product String</div>
+              <div class="flex w-full flex-wrap">
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Acne</div>
+                </div>
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Anti Aging</div>
+                </div>
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Jerawat</div>
+                </div>
+                <div class="col-span-3 bg-orange-500 rounded-lg m-1">
+                  <div class="text-sm text-white px-2">Kulit Berminyak</div>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </div>
+        <!-- pagination -->
+        <div class="col-span-12 m-auto my-2">
+          <div class="flex flex-cols">
+            <router-link to="#">
+              <div
+                class="rounded-full min-w-[42px] min-h-[42px] bg-gray-200 border border-gray-400 mx-1 hover:bg-orange-400 hover:text-white hover:border-white hover:opracity-75">
+                <div class="m-2 text-center">1</div>
+              </div>
+            </router-link>
+            <router-link to="#">
+              <div
+                class="rounded-full min-w-[42px] min-h-[42px] bg-gray-200 border border-gray-400 mx-1 hover:bg-orange-400 hover:text-white hover:border-white hover:opracity-75">
+                <div class="m-2 text-center">2</div>
+              </div>
+            </router-link>
+            <div
+              class="rounded-full min-w-[42px] min-h-[42px] bg-gray-200 border border-gray-400 mx-1 hover:bg-orange-400 hover:text-white hover:border-white hover:opracity-75">
+              <div class="m-2 text-center">...</div>
+            </div>
+            <router-link to="#">
+              <div
+                class="rounded-full min-w-[42px] min-h-[42px] bg-gray-200 border border-gray-400 mx-1 hover:bg-orange-400 hover:text-white hover:border-white hover:opracity-75">
+                <div class="m-2 text-center">99</div>
+              </div>
+            </router-link>
+          </div>
+        </div>
+        <!-- end pagination -->
       </div>
     </div>
   </main>

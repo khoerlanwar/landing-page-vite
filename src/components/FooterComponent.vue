@@ -53,16 +53,16 @@
         <div class="col-span-3">
           <div class="text-xl font-bold mb-4">Navigasi</div>
           <div class="flex flex-col space-y-2">
-            <router-link to="/">
+            <router-link to="/article">
               <div class="hover:text-orange-400">Artikel</div>
             </router-link>
-            <router-link to="/">
+            <router-link to="/brochure">
               <div class="hover:text-orange-400">Brosur</div>
             </router-link>
-            <router-link to="/">
+            <router-link to="/treatment">
               <div class="hover:text-orange-400">Perawatan</div>
             </router-link>
-            <router-link to="/">
+            <router-link to="/product">
               <div class="hover:text-orange-400">Produk</div>
             </router-link>
           </div>
@@ -84,14 +84,16 @@ export default {
     IconInstagram,
     IconTiktok,
   },
-  data() {
+  data()
+  {
     return {};
   },
 
-  mounted() {},
+  mounted() { },
 
   methods: {},
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+</style>

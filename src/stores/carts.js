@@ -4,11 +4,13 @@ export const useCartStore = defineStore("carts", {
   state: () => ({
     carts: [],
     total: 0,
+    totalCart: 0,
   }),
   getters: {
     totalCarts()
     {
-      return this.carts.length ? this.carts.length : JSON.parse(localStorage.getItem("carts")).length;
+      var totalCart = this.carts.length ? this.carts : JSON.parse(localStorage.getItem("carts"))
+      return totalCart.length;
     },
     myCarts()
     {
